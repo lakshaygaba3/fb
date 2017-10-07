@@ -1,0 +1,26 @@
+body{
+  background-color: #E9EBEE;
+}
+#my-nav{
+  background-color: #4267b2;
+  color:white;
+}
+#my-nav a{
+  color: white;
+}
+#icon-color span{
+  color: #0D1325;
+  font-size: 17px;
+}
+.box-width{
+  min-width:448px;
+}
+footer{
+  height: 40px;
+  margin-top: 30px;
+}
+
+.row{
+  margin-right: 50px;
+  margin-left: 50px;
+}
