@@ -20,7 +20,26 @@ footer{
   margin-top: 30px;
 }
 
-.row{
-  margin-right: 50px;
-  margin-left: 50px;
+.p-align p{
+  padding: 20px 15px 0px 15px;
+  color:solid-black;
+}
+.p-align a{
+  color: black;
+}
+/*.post-section, .ads{
+  background-color: white;
+  height:800px;*/
+
+}
+.pills-width a{
+  font-size: 13px;
+  padding-right: 5px !important;
+}
+.panel-body .glyphicon{
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.ads{
+  background-color: white !important;
 }
