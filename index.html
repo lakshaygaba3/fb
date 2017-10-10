@@ -3,11 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
+    <script
+			  src="https://code.jquery.com/jquery-3.2.1.js"
+			  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+			  crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css\bootstrap.css">
+    <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="main.css">
   </head>
-  <body>
+  <body class="color-body">
   <nav>
     <nav class="navbar navbar-default" id="my-nav">
   <div class="container-fluid">
@@ -20,7 +28,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#" id="brand">facebook</a>
-      <i class="fa fa-facebook-official icon-social " aria-hidden="true"></i>
+      <i class="fa fa-facebook-official icon-social icon-width" aria-hidden="true"></i>
       </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -32,9 +40,9 @@
         <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
       </form>
       <ul class="nav navbar-nav navbar-right" id="icon-color">
-        <li><a href="https://www.facebook.com/lakshay.gaba.18">Lakshay</a></li>
+        <li><a href="https://www.facebook.com/lakshay.gaba.18"><img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p160x160/15056253_1349436615108278_230744706352693329_n.jpg?oh=a0b7f73bf338b6157745354bef6dd6ae&oe=5A4560CD" height="20" width="20" alt="Person">Lakshay</a></li>
         <li><a href="https://www.facebook.com/">Home</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-user"></a></span></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"><span class="plus">+</span></a></span></li>
         <li><a href="https://www.facebook.com/messages/new"><span class="glyphicon glyphicon-envelope"></a></span></li>
         <li><a href="https://www.facebook.com/notification"><span class="glyphicon glyphicon-globe"></a></li>
           <li><a href="#"><span class="glyphicon glyphicon-question-sign"></a></li>
@@ -44,24 +52,23 @@
 </nav>
 <div class="container">
   <article class="row wrapper">
-    <section class="col-md-2">
-    <div>
+    <section class="col-md-3 hidden-xs">
+    <div class="active">
     <ul class="nav nav-pills nav-stacked p-align">
-      <p>Lakshyay gaba</p>
-      <li role="presentation"><a href="https://www.facebook.com/?sk=nf">News Feed</a></li>
-      <li role="presentation"><a href="https://www.facebook.com/messages/t">Messanger</a></li>
+      <p><i class="fa fa-home" aria-hidden="true"></i>Lakshyay gaba</p>
+      <li role="presentation"><a href="https://www.facebook.com/?sk=nf"><i class="fa fa-newspaper-o" aria-hidden="true"></i>News Feed<span class="badge pull-right">2</span><span class="plus"></span></a></li>
+      <li role="presentation"><a href="https://www.facebook.com/messages/t"><i class="fa fa-commenting" aria-hidden="true"></i>Messanger</a></li>
       <p><b>Shortcuts</b></p>
-      <li role="presentation"><a href="https://www.facebook.com/groups/185769274827354/">A.P.S Rocks</a></li>
+      <li role="presentation"><a href="https://www.facebook.com/groups/185769274827354/"><i class="fa fa-users" aria-hidden="true"></i>A.P.S Rocks<span class="badge pull-right">123</span></a></li>
       <p><b>Explore</b></p>
-      <li role="presentation"><a href="https://www.facebook.com/events/">Events</a></li>
-      <li role="presentation"><a href="https://www.facebook.com/pages/?category=liked">Page</a></li>
-      <li role="presentation"><a href="https://www.facebook.com/saved/?cref=28">Saved</a></li>
-      <li role="presentation"><a href="https://www.facebook.com/offers/v2/wallet">Offer</a></li>
-      <li role="presentation"><a href="https://www.facebook.com/bookmarks/lists/">Friend List</a></li>
-      <li role="presentation"><a href="https://www.facebook.com/onthisday/?source=bookmark">On This Day</a></li>
-      <li role="presentation"><a href="https://www.facebook.com/weather/?orig_src=bookmark">Weather</a></li>
-      <li role="presentation"><a href="https://www.facebook.com/gameroom/home/">Games</a></li>
-      <li role="presentation"><a href="https://www.facebook.com/pokes">Pokes</a></li>
+      <li role="presentation"><a href="https://www.facebook.com/events/"><i class="fa fa-calendar" aria-hidden="true"></i></i>Events<span class="badge pull-right">2</span></a></li>
+      <li role="presentation"><a href="https://www.facebook.com/pages/?category=liked"><i class="fa fa-file-text" aria-hidden="true"></i>Page</a></li>
+      <li role="presentation"><a href="https://www.facebook.com/saved/?cref=28"><i class="fa fa-bookmark" aria-hidden="true"></i>Saved</a></li>
+      <li role="presentation"><a href="https://www.facebook.com/bookmarks/lists/"><i class="fa fa-list-alt" aria-hidden="true"></i>Friend List<span class="badge pull-right">5</span></a></li>
+      <li role="presentation"><a href="https://www.facebook.com/onthisday/?source=bookmark"><i class="fa fa-podcast" aria-hidden="true"></i>On This Day</a></li>
+      <li role="presentation"><a href="https://www.facebook.com/weather/?orig_src=bookmark"><i class="fa fa-sun-o" aria-hidden="true"></i>Weather</a></li>
+      <li role="presentation"><a href="https://www.facebook.com/gameroom/home/"><i class="fa fa-gamepad" aria-hidden="true"></i>Games</a></li>
+      <li role="presentation"><a href="https://www.facebook.com/pokes"><i class="fa fa-hand-o-right" aria-hidden="true"></i>Pokes<span class="badge pull-right">9</span></a></li>
       <p><b>Creat</b></p>
        <ul class="nav nav-pills pills-width">
         <li role="presentation"><a href="https://www.facebook.com/ads/manager/creation/creation/?act=197730260278925&campaign_id=433405496710037&placement=bkmk_adcr&extra_1=campaign">Advert</a></li>
@@ -73,23 +80,31 @@
   </section>
     <section class="col-md-6"><div class="post-section">
       <div class="panel panel-default">
-           <div class="panel-heading"><h3 class="panel-title">
-           <a href=""><b>Jatin Arora</b> </a></h3></div>
-           <div class="panel-body">
-             <div class="panel-body">
-               <div>
-                 <h2 style="text-decoration:underline">
-                   OM pArKaSh ROckS......
-                 </h2>
-
-                 <h3 class="text-post">
+           <div class="panel-heading"><div class="media-left">
+              <a href="https://www.facebook.com/lakshay.gaba.18">
+                  <img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p160x160/15056253_1349436615108278_230744706352693329_n.jpg?oh=a0b7f73bf338b6157745354bef6dd6ae&oe=5A4560CD" height="32" width="32" alt="Person">
+              </a>
+          </div>
+          <div class="media-body">
+              <span><a href="https://www.facebook.com/lakshay.gaba.18">
+                  <b>Lakshay</b></a>
+              </span>
+              <div class="like-toolkit">
+                  <span class="text-muted ">1 week ago</span>
+                  <span class="text-muted">&#8226</span>
+                  <span class="glyphicon glyphicon-globe"></span>
+              </div>
+          </div>
+          <div class="panel-body">
+            <div>
+                   <h3 class="text-post">
                     Om Prakash: bol aunty aau Kya, ghanti me bjau Kya, sot me lgau kya 😎<br>
                    (Gormint)Aunty: Ye sare milke sot lgagye 😬<br>
                    #yeahlonde #opbhaikaswag 😂😂😂
                  </h3>
-               </div>
+               </div><hr>
              </div>
-             <div>
+             <div class="like-margin">
              <span>
                <span class="glyphicon glyphicon-thumbs-up"></span>
                <span>Like</span>
@@ -100,53 +115,257 @@
              </span>
            </div>
          </div>
-         <div class="panel-footer">Add a comment...</div>
+         <div class="panel-footer"><div class="comment-section">
+          <div class="media-left">
+          <a href="https://www.facebook.com/hritik.ralhan.3">
+          <img src="https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/19225720_1386523464762112_6403786929747868080_n.jpg?oh=b00ec1db3f0eaff555676d3cf0892594&oe=5A876D7D" height="32" width="32" alt="Person">
+          </a>
+          </div>
+          <div class="media-body">
+          <span><a href="https://www.facebook.com/hritik.ralhan.3">
+          <b>Hritik Ralhan</b></a>
+          </span>
+         <span>Hahahahaha bhai </span>
+          <div class="like-comment-toolkit">
+            <span><a href="">Like</a></span>
+            <span class="text-muted">&#8226</span>
+            <span><a href="">Reply</a></span>
+              <span class="text-muted">&#8226</span>
+            <span class="text-muted ">1 min</span>
+            </div>
+                </div>
+          </div>
+          <div class="comment-section">
+        <div class="media-left">
+          <a href="https://www.facebook.com/sayash.aloney">
+              <img src="https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/18838798_307842409644827_1219872139179325384_n.jpg?oh=22b2729ff179a2569c279b79e4e5134a&oe=5A495BA1" height="32" width="32" alt="Person">
+        </a>
+        </div>
+        <div class="media-body">
+        <span><a href="https://www.facebook.com/sayash.aloney">
+          <b>Sayash Aloney</b></a>
+          </span>
+          <span>Nailed it bro.....hahahaha </span>
+            <div class="like-comment-toolkit">
+              <span><a href="">Like</a></span>
+              <span class="text-muted">&#8226</span>
+              <span><a href="">Reply</a></span>
+              <span class="text-muted">&#8226</span>
+              <span class="text-muted ">2 days before</span>
+              </div>
+              </div>
+              </div>
+              <div class="media">
+             <div class="media-left">
+            <a href="https://www.facebook.com/starboyalankarartist">
+    <img src="https://scontent.fdel11-1.fna.fbcdn.net/v/t1.0-9/18198595_1885136305144749_8515863674598198552_n.jpg?oh=6332e3f27d3a221252c8f9191e04f36b&oe=5A75E801" height="32" width="32" alt="Person">
+        </a>
+        </div>
+          <div class="media-body">
+      <input type="text" class="input-commentbox" placeholder="Write a comment..">
+        </div>
+          </div>
+</div></div>
          </div>
          <div class="panel panel-default">
-           <div class="panel-heading"><h3 class="panel-title">
-           <a href="">Lakshay Gbab</a></h3></div>
-           <div class="panel-body">
-             <div class="img-post">
-                 <h4>
-                   #MEMORIESSOFAR#BROTHERS</br>#DEARSTRESSLETSBREAKUP
-                 </h4>
-               <img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/15056253_1349436615108278_230744706352693329_n.jpg?oh=acff5348f3935a5fb8a4a84f44db9d3e&oe=5A86DC8C" class="img-responsive" alt="Responsive image">
-             </div>
-             <div>
-             <span>
-               <span class="glyphicon glyphicon-thumbs-up"></span>
-               <span>Like</span>
-             </span>
-             <span>
-               <span class="glyphicon glyphicon-comment"></span>
-               <span>Comment</span>
-             </span>
-           </div>
-         </div><div class="panel-footer">Add a comment...</div></div>
+           <div class="panel-heading"><div class="media-left">
+                          <a href="https://www.facebook.com/hritik.ralhan.3">
+                              <img src="https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/19225720_1386523464762112_6403786929747868080_n.jpg?oh=b00ec1db3f0eaff555676d3cf0892594&oe=5A876D7D" height="32" width="32" alt="Person">
+                          </a>
+                      </div>
+                      <div class="media-body">
+                          <span><a href="https://www.facebook.com/hritik.ralhan.3">
+                              <b>Hritik Ralhan</b></a>
+                          </span>
+                          <div class="like-toolkit">
+                              <span class="text-muted ">2 hour ago</span>
+                              <span class="text-muted">&#8226</span>
+                              <span class="glyphicon glyphicon-globe"></span>
+                          </div>
+                      </div>
+                      <div class="panel-body">
+            <div class="img-post">
+                <h4>
+                  Hahahahaha.... bhai khatarnaak
+                </h4>
+              <img src="https://i.imgflip.com/p4rds.jpg" class="img-responsive" alt="Responsive image">
+            </div>
+            <div>
+            <span>
+              <span class="glyphicon glyphicon-thumbs-up"></span>
+              <span>Like</span>
+            </span>
+            <span>
+              <span class="glyphicon glyphicon-comment"></span>
+              <span>Comment</span>
+            </span>
+          </div>
+         </div></div>
+         <div class="panel-footer"><div class="comment-section">
+        <div class="media-left">
+          <a href="https://www.facebook.com/lakshay.gaba.18">
+          <img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p160x160/15056253_1349436615108278_230744706352693329_n.jpg?oh=a0b7f73bf338b6157745354bef6dd6ae&oe=5A4560CD" height="32" width="32" alt="Person">
+            </a>
+          </div>
+        <div class="media-body">
+        <span><a href="https://www.facebook.com/lakshay.gaba.18">
+         <b>Lakshay Gaba</b></a>
+        </span>
+      <span>Aapke Shkl Acche Nai To Baat To Acchi Kro </span>
+        <div class="like-comment-toolkit">
+        <span><a href="">Like</a></span>
+        <span class="text-muted">&#8226</span>
+        <span><a href="">Reply</a></span>
+        <span class="text-muted">&#8226</span>
+        <span class="text-muted ">9 mins</span>
+        </div>
+        </div>
+        </div>
+        <div class="comment-section">
+        <div class="media-left">
+        <a href="https://www.facebook.com/starboyalankarartist">
+        <img src="https://scontent.fdel11-1.fna.fbcdn.net/v/t1.0-9/18198595_1885136305144749_8515863674598198552_n.jpg?oh=6332e3f27d3a221252c8f9191e04f36b&oe=5A75E801" height="32" width="32" alt="Person">
+        </a>
+        </div>
+        <div class="media-body">
+          <input type="text" class="input-commentbox" placeholder="Write a comment..">
+        </div>
+        </div>
+        </div></div>
          <div class="panel panel-default">
-           <div class="panel-heading"><h3 class="panel-title">
-           <a href="">Lakshay Gaba</a></h3></div>
-           <div class="panel-body">
-             <h4>
-               Bhai you always rockz.....hahahahaha
-             </h4>
-             <div class="embed-responsive embed-responsive-16by9 img-post">
-               <iframe class="embed-responsive-item" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fstarboyalankarartist%2Fvideos%2F1696517057340009%2F&show_text=0&width=560" width="560" height="322" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-             </div>
-             <div>
-             <span>
-               <span class="glyphicon glyphicon-thumbs-up"></span>
-               <span>Like</span>
-             </span>
-             <span>
-               <span class="glyphicon glyphicon-comment"></span>
-               <span>Comment</span>
-             </span>
+           <div class="panel-heading"><div class="media-left">
+          <a href="https://www.facebook.com/sayash.aloney">
+              <img src="https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/18838798_307842409644827_1219872139179325384_n.jpg?oh=22b2729ff179a2569c279b79e4e5134a&oe=5A495BA1" height="32" width="32" alt="Person">
+          </a>
+      </div>
+      <div class="media-body">
+          <span><a href="https://www.facebook.com/sayash.aloney">
+              <b>Sayash Aloney</b></a>
+          </span>
+          <div class="like-toolkit">
+              <span class="text-muted ">20 min</span>
+              <span class="text-muted">&#8226</span>
+              <span class="glyphicon glyphicon-globe"></span>
+          </div>
+          </div>
+            <div class="panel-body">
+            <h4>
+              Bhai you always rockz.....hahahahaha
+            </h4>
+            <div class="embed-responsive embed-responsive-16by9 video-post">
+              <iframe class="embed-responsive-item" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fstarboyalankarartist%2Fvideos%2F1696517057340009%2F&show_text=0&width=560" width="560" height="322" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+            </div>
+            <div>
+            <span>
+              <span class="glyphicon glyphicon-thumbs-up"></span>
+              <span>Like</span>
+            </span>
+            <span>
+              <span class="glyphicon glyphicon-comment"></span>
+              <span>Comment</span>
+            </span>
+          </div></div>
            </div>
-         </div><div class="panel-footer">Add a comment...</div></div>
- </div></section>
-<section class="col-md-4"><div class="ads"></div></section>
-  </article>
+            <div class="panel-footer">
+             <div class="comment-section">
+        <div class="media-left">
+            <a href="https://www.facebook.com/starboyalankarartist">
+                <img src="https://scontent.fdel11-1.fna.fbcdn.net/v/t1.0-9/18198595_1885136305144749_8515863674598198552_n.jpg?oh=6332e3f27d3a221252c8f9191e04f36b&oe=5A75E801" height="32" width="32" alt="Person">
+            </a>
+        </div>
+        <div class="media-body">
+            <span><a href="https://www.facebook.com/starboyalankarartist">
+                <b>Alankar Singh</b></a>
+          </span>
+          <span>Dhanyawaad Bhai #aaglagadi </span>
+          <div class="like-comment-toolkit">
+              <span><a href="">Like</a></span>
+              <span class="text-muted">&#8226</span>
+              <span><a href="">Reply</a></span>
+              <span class="text-muted">&#8226</span>
+              <span class="text-muted ">18 mins</span>
+          </div>
+          </div>
+      </div>
+      <div class="comment-section">
+          <div class="media-left">
+      <a href="https://www.facebook.com/lakshay.gaba.18">
+        <img src="https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-1/p160x160/15056253_1349436615108278_230744706352693329_n.jpg?oh=a0b7f73bf338b6157745354bef6dd6ae&oe=5A4560CD" height="32" width="32" alt="Person">
+          </a>
+        </div>
+          <div class="media-body">
+      <input type="text" class="input-commentbox" placeholder="Write a comment..">
+            </div>
+          </  </div></div>
+</div></section>
+<section class="col-md-3 hidden-xs"><div class="ads">
+        <div class="panel panel-default card-margin"><div class="panel-heading">
+            <span><h4 class="t">Trending</h4>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#top-trends"><i class="fa fa-line-chart text-muted" aria-hidden="true"></i></a></li>
+                <li><a data-toggle="tab" href="#politics"><i class="fa fa-university text-muted" aria-hidden="true"></i></a></li>
+                <li><a data-toggle="tab" href="#sports"><i class="fa fa-futbol-o text-muted" aria-hidden="true"></i></a></li>
+            </ul>
+          </span>
+          <div class="panel-body">
+            <div class="tab-content">
+                <div id="top-trends" class="tab-pane fade in active">
+                    <div class="list-group box-margin">
+                        <a href="#" class="list-group-item">
+                            <p class="list-group-item-text">Alankar Singh showing new heights to his art</p>
+                        </a>
+                    </div>
+                    <div class="list-group box-margin">
+                        <a href="#" class="list-group-item ">
+                            <p class="list-group-item-text">Om Prakash ready to release his Aunty Ki Ghanti Part-2</p>
+                        </a>
+                    </div>
+                    <div class="list-group box-margin">
+                        <a href="#" class="list-group-item">
+                            <p class="list-group-item-text">SC Ban on Firecrackers</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="politics" class="tab-pane fade">
+                    <div class="list-group box-margin">
+                        <a href="#" class="list-group-item">
+                            <p class="list-group-item-text">something</p>
+                        </a>
+                    </div>
+                    <div class="list-group box-margin">
+                        <a href="#" class="list-group-item">
+                            <p class="list-group-item-text">somethng</p>
+                        </a>
+                    </div>
+                    <div class="list-group box-margin">
+                        <a href="#" class="list-group-item ">
+                            <p class="list-group-item-text">something</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="sports" class="tab-pane fade">
+                    <div class="list-group box-margin">
+                        <a href="#" class="list-group-item">
+                            <p class="list-group-item-text">Indian Cricket Team on their way to thrash Australia in 2nd T20I to seal the series</p>
+                        </a>
+                    </div>
+                    <div class="list-group box-margin">
+                        <a href="#" class="list-group-item">
+                            <p class="list-group-item-text">something</p>
+                        </a>
+                    </div>
+                    <div class="list-group box-margin">
+                        <a href="#" class="list-group-item">
+                            <p class="list-group-item-text">something</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div></div></div>
+        <div class="panel panel-default card-margin"><div class="panel-body"><div>The impressionistic art of <b>Alankar Singh</b> are deeply inspired by dream art and its various aspects. Alankar, who lives in India, is fascinated by the interplay of color, shape and draws upon these elements in various life aspects. Alankar prefers working with pencil, water Color, and acrylics and also have spare time for his hobby. Alankar Singh is also a Engineering student pursuing B.Tech. in Electronics & Communication Engineering from University Institute of Engineering & Technology, Kurukshetra University, Kurukshetra.</div><br>
+        <div><b><q>For me art is an expression of an artist which he/she observes in day-to-day life.</q></b></div>
+<div><b>- Alankar Singh</b></div></div></div>
+
  <footer class="row">
    <ul class="nav nav-pills pull-right">
      <li role="presentation"><a href="https://newsroom.fb.com/products/">About us</a></li>
@@ -155,6 +374,7 @@
      <li role="presentation"><a href="https://www.facebook.com/business/">Advertising</a></li>
      <li role="presentation"><a href="https://www.facebook.com/policies/cookies/">Cookie</a></li>
  </footer>
+ </article>
    </div>
    </body>
 </html>

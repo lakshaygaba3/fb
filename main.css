@@ -1,4 +1,4 @@
-body{
+.color-body{
   background-color: #E9EBEE;
 }
 #my-nav{
@@ -12,12 +12,15 @@ body{
   color: #0D1325;
   font-size: 17px;
 }
+#icon-color img{
+  border-radius: 50%;
+}
 .box-width{
   min-width:448px;
 }
 footer{
   height: 40px;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .p-align p{
@@ -26,12 +29,19 @@ footer{
 }
 .p-align a{
   color: black;
+  margin: -10px 0;
+  display: block;
+  font-size: 13px;
+  padding: 8px;
 }
-/*.post-section, .ads{
+.p-align i{
+  padding: 0px 8px 4px 0px !important;
+}
+ .ads{
   background-color: white;
-  height:800px;*/
-
+  height:800px;
 }
+
 .pills-width a{
   font-size: 13px;
   padding-right: 5px !important;
@@ -40,6 +50,65 @@ footer{
   margin-left: 10px;
   margin-right: 5px;
 }
+.like-margin .glyphicon{
+  margin-left: 10px;
+  margin-right: 5px;
+}
 .ads{
   background-color: white !important;
+}
+.img-post{
+  padding:10px;
+}
+.video-post{
+  margin: 10px;
+}
+.plus{
+  font-size: 10px !important;
+
+}
+.p-align .plus{
+  background-color: grey !important;
+  margin: 5px !important;
+  font-size: 12px !important;
+  border-radius: !important;
+  color: white !important;
+
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-social {
+    font-size: 30px !important;
+    color: white;
+    padding: 10px;
+  }
+  .panel-heading{
+    background-color: white !important;
+    border: 0px !important;
+}
+.media-left img{
+  border-radius:50% !important;
+  margin-top: 11px;
+}
+.media-body{
+  padding-top: 8px;
+}
+.input-commentbox{
+    width: 100% ;
+    border-radius: 5px;
+    color: gray;
+    height: 32px;
+    padding-left: 10px;
+    border: none;
+}
+.input-commentbox:focus{
+    border: none !important;
+    box-shadow: none !important;
+    outline: none;
 }
