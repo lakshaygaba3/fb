@@ -1,10 +1,10 @@
 .color-body{
   background-color: #E9EBEE;
 }
-.container{
+/*.container{
   background-color: #E9EBEE;
 margin-left: 20px !important;
-}
+}*/
 #my-nav{
   background-color: #4267b2;
   color:white;
@@ -16,13 +16,14 @@ margin-left: 20px !important;
 .notify-badge{
     position: absolute;
     right:10px;
-    top:4px;
+    top:7px;
     background:red;
     text-align: center;
-    color:white !important;
+    /*color:white !important;*/
     padding: 0 4px 0 4px;
     font-size: 10px !important;
     z-index: 2;
+    border-radius: 50%;
   }
 
 #icon-color span{
@@ -32,6 +33,15 @@ margin-left: 20px !important;
 #icon-color img{
   border-radius: 50%;
 }
+.fa-user-plus{
+  color: #0D1325 !important;
+  font-size: 17px !important;
+  padding-top: 4px !important;
+}
+.fa-globe{
+ font-size: 17px !important;
+ padding-top: 2px !important;
+}
 .box-width{
   min-width:448px;
 
@@ -40,6 +50,7 @@ margin-left: 20px !important;
     .box-width{
         min-width: 100px;
     }
+
 }
 footer{
   height: 40px;
@@ -138,4 +149,21 @@ color: black;
     border: none !important;
     box-shadow: none !important;
     outline: none;
+}
+.stories{
+  border-radius: 50%;
+  border-color: #4080ff ;
+  border-style: solid ;
+  border-width: 2px;
+  margin-top: -14px;
+  margin-right: 5px;
+}
+.jatin{
+  margin-left: 5px !important;
+}
+.sanjana{
+  margin-left: -5px !important;
+}
+.aman{
+  margin-left: 2px;
 }
